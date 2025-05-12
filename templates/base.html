@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" id="sheet" href="{{ url_for('static', filename='Nether.css') }}">
+        <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div class="content">
+        <div class="navbar">
+            {% block nav %} 
+                <select onchange="themeChange()" name="Themes" id="Themes">
+                    <option class="Nether" value="Nether">Nether</option>
+                    <option class="Forest" value="Forest">Forest</option>
+                    <option class="Ocean" value="Ocean">Ocean</option>
+                    <option class="Prismarine" value="Prismarine">Prismarine</option>
+                </select>
+
+                <input class="searchbar" type="text" placeholder="Search...">
+                
+                <a href="/login">
+                <button type="button" class="nav-button">Login</button>
+                </a>
+
+                <a href="/signup">
+                    <button type="button" class="nav-button">Sign up</button>
+                </a>
+            {% endblock %}
+        </div>
+        
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" id="sheet2" href="{{ url_for('static', filename='Nether2.css') }}">
+    <title>Profile | {{username}}</title>
+{% endblock %}
+
+{% block content %}
+    <img id="pfp" src="{{pfp}}">
+    <h1>{{username}}</h1>
+    <div>
+        <div id="your-email">
+        {{email}}
+        </div>
+        <div>
+            <input class="box3" placeholder="Email"></input>
+            <button type="button" class="profile-change-buttons">Change Email</button>
+        </div>
+    </div>
+    <div>
+        <div id="your-uname">
+        {{username}}
+        </div>
+        <div>
+            <input class="box3" placeholder="Username"></input>
+            <button type="button" class="profile-change-buttons">Change Username</button>
+        </div>
+    </div>
+    <div>
+        <div id="your-password">
+        {{password}}
+        </div>
+        <div>
+            <input class="box3" placeholder="Password"></input>
+            <button type="button" class="profile-change-buttons">Change Password</button>
+        </div>
+    </div>
+    <div>
+        <div class="pfp-button">
+            <button class="pfp-button" type="button">Change Profile Picture</button>
+        </div>
+    </div>
+
+{% endblock %}

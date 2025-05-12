@@ -1,0 +1,236 @@
+body {
+    font-size: 50px;
+    background-color: #402e7aff;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: block;
+    height: 10vh;
+    background-color:#4c3bcf;
+}
+
+.searchbar {
+    background-color: #3dc2ec;
+    color: #402e7a;
+}
+   
+.nav-button {
+    background-color: #4b70f5 ;
+    color: #fff5e1ff;
+}
+
+::placeholder{
+    color: #3dc2ec;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #3dc2ec;
+}
+
+.Nether{
+    background-color: #4b70f5;
+    color: #fff5e1ff;
+}
+
+.Forest{
+    background-color: #4b70f5;
+    color: #c7b7a3;
+}
+
+.Ocean{
+    background-color: #4b70f5;
+    color: #402e7a;
+}
+
+.Prismarine{
+    background-color: #4b70f5;
+    color: #55ad9b;
+}
+
+#Themes{
+    background-color: #4b70f5;
+    color: #a4c2f4;  
+}
+
+.home-header{
+    color: #a4c2f4;
+}
+
+.pfp-button{
+    color: #3dc2ec;
+    background-color: #4c3bcfff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.profile-change-buttons{
+    color: #3dc2ec;
+    background-color: #4c3bcfff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.welcome{
+    text-align: center;
+    color: #3dc2ec;
+    font-size: 35px;
+}
+
+.start {
+    font-size: 59px;
+    background-color: #4b70f5ff;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    color: #402e7a;
+    text-align:initial;
+    height: 650px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.box3{
+    /* display: flex; */
+    background-color: #4c3bcfff;
+    border-style: none;
+    width: 50%;
+    height: 50px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3dc2ec;
+}
+
+.button{
+    color: #3dc2ec;
+    background-color: #4c3bcfff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#content-list{
+    background-color: #4c3bcfff;
+    border-style: none;
+    width: 30%;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #3dc2ec;
+}
+
+.course-profile{
+    background-color: #3dc2ecff;
+    margin: 20px;
+    width: 25%;
+}
+
+.course-container{
+    display: flex;
+}
+
+.instructions{
+    color: #3dc2ecff;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 33%;
+}
+
+.root{
+    padding: 20px;
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align:center;
+    color: #3dc2ecff;
+}
+
+.main input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkbox-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #4b70f5ff;
+    border: 2px solid #4b70f5ff;
+}
+
+/* Hover effect */
+.main:hover input~.checkbox-container {
+    background-color: rgb(26, 68, 218);
+}
+
+/* Active effect */
+.main input:active~.checkbox-container {
+    background-color: rgb(26, 68, 218);
+}
+
+/* Checked effect */
+.main input:checked~.checkbox-container {
+    background-color: #4b70f5ff;
+}
+
+/* Checkmark */
+.checkbox-container::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Display checkmark when checked */
+.main input:checked~.checkbox-container::after {
+    display: block;
+}

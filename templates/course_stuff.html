@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" id="sheet2" href="{{ url_for('static', filename='Nether2.css') }}">
+    <title>{{course_name}} | MineCourses</title>
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1 class="instructions">Blocks Needed: "Blah" And "Blah" And "Stuff" <br>
+        Instructions: Do This And That And Place Blocks And Place More Blocks And Create Things That Do Stuff To Make Cool Things Happen. Go To The Next Page For Step 2 (Click The Arrow) </h1>
+</div>
+<div class="root">
+    <a href="/courses/{{i}}">
+    <label class="main">Continue To Next Page
+        <input type="checkbox">
+        <span class="checkbox-container"></span>
+    </label>
+    </a>
+</div>
+{% endblock %}

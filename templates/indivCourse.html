@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" id="sheet2" href="{{ url_for('static', filename='Nether2.css') }}">
+    <title>{{course_name}} | MineCourses</title>
+{% endblock %}
+
+{% block content %}
+{{courseNum}}
+    <div id="grid">
+        <img id="course-profile-thumbnail" src="{{thumbnail}}"/>
+        <div id="course-desc">
+            <p>{{description}}</p>
+        </div>
+        <h1 id="course-name">{{course_name}}</h1>
+        <div id="content-list">
+            <p>What the course offers</p>
+            <ul>
+
+            </ul>
+        </div>
+        <button type="button" class="button">Add to your courses</button> 
+    </div>
+
+{% endblock %}

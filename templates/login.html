@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Login | MineCourses</title>
+{% endblock %}
+
+{% block nav %}{% endblock %}
+{% block content %}
+    
+    <div id="login-container">
+        <div id="input-details">
+            <h1 class="text">Login to Your <br>
+                Account</h1>
+            <div class="account-input">
+                <input class="box" placeholder="Username"></input>
+            </div>
+            <div class="account-input">
+                <input class="box" type="password" placeholder="Password"></input>
+            </div>
+            <div class="login-button">
+                <a href="/">
+                    <button class="login-buttons" type="button">Login</button>
+                </a>
+            </div>
+        </div>
+
+        <div id="gradient-box">
+            <h2 class="New">New here? <br>
+                Create an Account</h2>
+                <a href="/signup">
+            <button class="sign-buttons" type="button">Sign Up</button>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}

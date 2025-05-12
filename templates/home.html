@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" id="sheet2" href="{{ url_for('static', filename='Nether2.css') }}">
+    <title>Home | {{username}}</title>
+{% endblock %}
+
+{% block content %}
+   
+    <h1 class="home-header">Courses</h1>
+    <span class="course-container">
+
+        {% for i in range(3) %}
+            <div class="course-profile">
+                <a href="/course/{{i}}">
+                    <img class="course-thumbnail-small" src="{{thumbnail}}">
+                    <p>{{Title}}</p>
+                    <div class="info-container">
+                        <p>{{rating}}</p>
+                        <p>{{time}}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </span>
+
+{# only when logged in #}
+        <h1 class="home-header">Your Courses</h1>
+        <span class="course-container">
+  
+
+                <div class="course-profile">
+                    <a>
+                        <img class="course-thumbnail-small" src="{{thumbnail}}">
+                        <p>{{title}}</p>
+                        <div class="info-container">
+                            <p>{{rating}}</p>
+                            <p>{{time}}</p>
+                        </div>
+                    </a>
+                </div>
+    
+        </span>
+
+{% endblock %}

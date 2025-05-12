@@ -1,0 +1,20 @@
+body {
+    background-color: #fff5e1ff;
+    margin: 0;
+}
+
+#login-container {
+    display: grid;
+    
+}
+
+#input-details {
+    grid-column: 1;
+    
+}
+
+#sign-up-box {
+    grid-column: 2;
+    background-image: linear-gradient(to bottom left, #c80036ff, #0c1844ff);
+    
+}
